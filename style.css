@@ -1,167 +1,20 @@
-
-@import '@trendmicro/react-sidenav/dist/react-sidenav.css'; body { 
-    font-family: "Lato", sans-serif;
-    margin: 0px;
-  }
-  
-
-
-  /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: right;
-  width: 200px;
-  padding: 5px;
+.topnav {
+  width: 100%;  /* i'm assuming full width */
+  height: 80px; /* change it to desired width */
+  background-color: rgb(0, 0, 0); /* change to desired color */
 }
-  .portfolio-items-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-  .portfolio-item-wrapper {
-    position: relative;
-  }
-  
-  .portfolio-img-background {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 350px;
-    width: 100%;
-  }
-  
-  .img-text-wrapper {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-  
-  .img-text-wrapper .subtitle {
-    transition: 1s;
-    color: transparent;
-  }
-  
-  .image-blur {
-    transition: 1s;
-    filter: brightness(10%);
-  }
-  
-  .img-text-wrapper:hover .subtitle {
-    color: lightseagreen;
-    font-weight: 600;
-  }
-  
-
-
-  body {
-    font-family: "Lato", sans-serif;
-  }
-  
-  /* Navbar container */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial;
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-top: 15px;    /* if you want it vertically middle of the navbar. */
 }
-
-/* Links inside the navbar */
-.navbar a {
-  float: right;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: right;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-  
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-}
-
-.container {
-    border: 1px solid orange;
-}
-
-.big_div {
-    border: 1px solid black;
-    height: 1200px;
-
-}
-
-#scrollup {
-    margin-top: 900px;
-}
-
-.reflute{
-    position: absolute;
-    height: auto;
-    left: 0px;
-   
+.topnav a {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  height: 80px;        /* if you want it to take the full height of the bar */
+  line-height: 80px;    /* if you want it vertically middle of the navbar */
 }
