@@ -6,6 +6,9 @@
 <link rel="shortcut icon" type="image/png" href="image/re.PNG">
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 </head>
 <body>
     <div class="topnav">
@@ -14,9 +17,25 @@
         <a href="Projects/">Projects
         <a href="about/">About
         <a href="Services/">Services
-        <a href="Get in Touch/">Get in Touch
-    </div>
+        <a href="Get in Touch/">Get in Touch</a>
+        </div> 
+
+
+
+        <div id="mydiv"></div>
+
+        <script type="text/babel">
+          class Hello extends React.Component {
+            render() {
+              return <h1>Hello This is our Website</h1>
+            }
+          }
+    
+          ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+        </script>
 </body>
+
+   
 <style>
     body {
     
